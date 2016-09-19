@@ -5,4 +5,11 @@
   <div>Hello, {{name|upper|esc}}.</div>
 </div>
 {{ include test-sub }}
+<div>
+<h3>eval plugin</h3>
+3+5={{"3+5"|eval}}
+</div>
+
+<h3>Direct PHP Tag</h3>
+<div><?php echo "direct echo result" ?></div>
 

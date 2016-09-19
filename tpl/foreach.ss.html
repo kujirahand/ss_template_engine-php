@@ -1,7 +1,7 @@
 <h2>foreach</h2>
 <ul>
 {{ each items as it }}
-  <li>{{index + 1 | bold }}.{{it.name}}</li>
+  <li>{{index | bold }}.{{it.name}}</li>
 {{ else_each }}
   <li>no data</li>
 {{ end_each }}

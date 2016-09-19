@@ -64,13 +64,26 @@ sub template:
 ```html:tpl/foreach.ss.html
 <ul>
 {{ each items as it }}
-  <li>{{index + 1 | bold }}.{{it.name}}</li>
+  <li>{{index | bold }}.{{it.name}}</li>
 {{ else_each }}
   <li>no data</li>
 {{ end_each }}
 </ul>
 ```
 
+### if
+
+```html:tpl/if.ss.html
+{{ if id > 3 }} id > 3 {{ endif }}
+```
+
+### Direct php tag
+
+You can write php tag directly.
+
+```html:tpl/test.ss.html
+<?php echo 'test' ?>
+```
 
 
 
