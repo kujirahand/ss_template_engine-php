@@ -15,3 +15,18 @@ $ss->show('test', array(
 
 $ss->show('test2', array());
 
+$ss->show('if', array("id" => 100));
+
+
+$ss->show('foreach', array(
+  "items" => array(
+    array("name" => "Taro"), array("name" => "Jiro"),
+    array("name" => "Saburo"), array("name"=>"Siro"),
+  ),
+));
+
+$ss->show('foreach', array(
+  "items" => array(
+  ),
+));
+

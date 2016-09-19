@@ -43,7 +43,7 @@ main template:
 
 ```html:tpl/test2.ss.html
 <div><h1>main</h1></div>
-{{ test2-sub | include }}
+{{ include test2-sub }}
 ```
 
 sub template:
@@ -59,6 +59,17 @@ sub template:
 {{ (variable_name) | (filter_func) }} ... use plugins
 ```
 
+## foreach || each
+
+```html:tpl/foreach.ss.html
+<ul>
+{{ each items as it }}
+  <li>{{index + 1 | bold }}.{{it.name}}</li>
+{{ else_each }}
+  <li>no data</li>
+{{ end_each }}
+</ul>
+```
 
 
 
