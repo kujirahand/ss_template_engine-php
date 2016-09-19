@@ -1,8 +1,3 @@
-# ss_template_engine-php
-
-super small template engine for php
-
-```php:test.php
 <?php
 require_once 'ss_template_engine.php';
 
@@ -31,6 +26,4 @@ echo $ss->cook("10|2|/={{10|2|/}}<br>", array());
 // cache
 $ss = new ss_template_engine(['cache_dir'=>'./cache']);
 $ss->show('test.tpl', array('name'=>'Mike'));
-```
-
 
